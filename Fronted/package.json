@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "proxy": "http://localhost:8001",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+ "scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
+
   "dependencies": {
     "@paypal/react-paypal-js": "^8.8.2",
     "@reduxjs/toolkit": "^2.5.1",
