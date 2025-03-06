@@ -11,13 +11,25 @@ import feedbackRoutes from './routes/aboutus.route..js';
 import blogRoute from './routes/blog.route.js';
 import contactusRoute from './routes/contactus.route.js';
 import careerRoutes from './routes/career.route.js';
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 import cookieParser from "cookie-parser";
 
 dotenv.config();
 
 const app = express();
-
+const firebaseConfig = {
+  apiKey: "AIzaSyDPgR-n8tYCZlXMlkF0EbvfXAuM-8lIZAE",
+  authDomain: "mern-c2a95.firebaseapp.com",
+  projectId: "mern-c2a95",
+  storageBucket: "mern-c2a95.firebasestorage.app",
+  messagingSenderId: "760291447302",
+  appId: "1:760291447302:web:63ce2c2e760b555aa56987",
+  measurementId: "G-M32W9P74W1"
+};
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 app.use(bodyParser.json({ limit: '100mb' }));
 app.use(bodyParser.urlencoded({ limit: '100mb', extended: true }));
 
