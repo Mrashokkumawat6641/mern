@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "proxy": "http://localhost:8001",
- "scripts": {
-  "start": "vite",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
-},
-
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "@paypal/react-paypal-js": "^8.8.2",
     "@reduxjs/toolkit": "^2.5.1",
@@ -43,6 +43,7 @@
     "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.13",
+    "gh-pages": "^6.3.0",
     "globals": "^15.11.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.17",
